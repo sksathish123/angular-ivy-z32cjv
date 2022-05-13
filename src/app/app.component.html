@@ -1,4 +1,15 @@
-<hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+<h2>Databinding Concept</h2>
+<h3>String Interpollation</h3>
+<div class="main">
+  name: {{ name }}<br />
+  Age: {{ Age }}<br />
+  Location:{{ Location }}<br />
+  course{{ course }}
+</div>
+<hr/>
+<h2>Property binding & EventBinding</h2>
+<button type="button" [disabled]="ontog" (click)="Submit()">Click</button>
+<hr/>
+<h2>ToWayDataBinding</h2>
+<label for="nam">Enter Your Name : </label>
+<input type="text"  [(ngModel)]="name" />
